@@ -1,0 +1,290 @@
+//Importações de arquivos
+@import 'bootstrap';
+@import 'components';
+@import 'plugins';
+
+:root {
+  --primary-base: #FE5A14;
+  --primary-dark: #D43A10;
+  --primary-light: #FF9445;
+  --primary-light-fade10: rgba(255, 148, 69, 0.1);
+  --primary-light-fade32: rgba(255, 148, 69, 0.32);
+  --danger-dark: #C11616;
+  --primary-mligter: #FFE9CD;
+  --neutral-primary-black: #222;
+  --neutral-secondary-black-1: #070708;
+  --neutral-dark-snow: #EFF2F7;
+  --neutral-secondary-black-2: #1D1E24;
+  --gradient-1: linear-gradient(180deg, rgba(245, 245, 247, 0.64) 0%, rgba(255, 245, 243, 0.64) 100%), #FFFFFF;
+  --gradient-2: linear-gradient(0deg, rgba(212, 58, 16, 0.005), rgba(212, 58, 16, 0.005)), #FFFFFF;
+}
+
+body {
+  background-color: #0C0C0C;
+  font-family: 'Work sans', sans-serif;
+  overflow: hidden !important;
+}
+
+body{
+  font-family: 'Inter', sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.img{
+  height: 900px;
+    color: white;
+    background-image: url(/dist/image/luz-verde.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.xbox{
+  text-align: center;
+  background-image: url(/dist/image/xbox.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body{
+  overflow: scroll;
+  overflow-y: auto !important;
+}
+
+
+.games {
+  max-width: 1920px;
+  margin: 300px auto 200px auto;
+  color: white;
+  display: flex;
+  flex: 1;
+  overflow: auto;
+  white-space: nowrap; 
+}
+
+.games .games_banner {
+  flex: 1;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.games .game1 {
+  background-image: url(/dist/image/banner-farcry6.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.controle{
+  margin-top: 180px;
+}
+
+.games .game1 img {
+  width: 300px;
+  height: 61.67px;
+  margin-bottom: 64.33px;
+}
+
+.games .game2 {
+  background-image: url(/dist/image/banner-forza.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+
+.games .game2 img {
+  width: 300px;
+  height: 83.71px;
+  margin-bottom: 64.33px;
+}
+
+.games .game3 {
+  background-image: url(/dist/image/banner-fifa.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.games .game3 img {
+  width: 200px;
+  height: 65.6px;
+  margin-bottom: 64.33px;
+}
+
+.games .game4 {
+  background-image: url(/dist/image/banner-minecraft.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+
+.games .game4 img {
+  width: 300px;
+  height: 49.8px;
+  margin-bottom: 64.33px;
+}
+
+/*===================================================*/
+
+.questions {
+  max-width: 1280px;
+  margin: 0 auto;
+  color: white;
+}
+
+.questions span {
+  color: #9BF00B;
+}
+
+.questions h3 {
+  font-size: 48px;
+  margin-bottom: 60px;
+}
+
+.questions .questions_area {
+  border-bottom: 2px solid #2E2E2E;
+  margin-bottom: 45px;
+}
+
+.questions .questions_area .questions_title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.questions .questions_area .questions_title h4{
+  font-size: 24px;
+}
+
+.questions .questions_area p{
+  font-size: 18px;
+  margin-left: 20px;
+  margin-bottom: 30px;
+  color: #C0C0C0;
+}
+
+/*===================================================*/
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin: 100px auto 20px auto;
+}
+
+footer .footer_text {
+  display: flex;
+}
+
+footer .footer_text p {
+  color: #777777;
+  font-size: 18px;
+  margin-left: 30px;
+}
+
+/*===================================================*/
+
+@media (max-width: 1310px) {
+  .nav_bar, .questions, footer {
+      margin: 0px 50px;
+  }
+
+  .container_controler {
+      margin: 300px 50px 0px 50px;
+  }
+
+  .game1, .game2, .game3, .game4 {
+      min-width: 480px;
+  }
+}
+
+@media (max-width: 1180px) {
+  .img_logo {
+      text-align: center;
+      margin-bottom: 30px;
+  }
+
+  .nav_bar header {
+      flex-direction: column;
+  }
+
+  .nav_bar header button {
+      margin-top: 30px;
+  }
+
+  .container_controler {
+      flex-direction: column-reverse;
+  }
+
+  .container_controler .controler_img {
+      flex: none;
+      height: 600px;
+  }
+
+  .container_controler .controler_text {
+      margin: 0;
+      text-align: center;
+  }
+} 
+
+@media (max-width: 750px) {
+  .nav_bar header .nav_bar_items ul {
+      flex-direction: column;
+  }
+
+  .nav_bar header .nav_bar_items ul li a{
+      display: block;
+      margin: 20px 0px;
+  }
+
+  .container_controler .controler_text h2 {
+      font-size: 54px;
+      line-height: 73.2px;
+  }
+
+  .hero_img .overlay .text {
+      margin-top: 220px;
+  }
+
+  .hero_img .overlay .text h1 {
+      font-size: 50px;
+  }
+
+  .container_controler .controler_img {
+      background-size: contain;
+  }
+
+  footer {
+      flex-direction: column;
+  }
+
+  footer .footer_logo {
+      margin-bottom: 20px;
+  }
+
+  footer .footer_text {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+  }
+  
+  footer .footer_text p {
+      margin-left: 0px;
+  }
+} 
+
+@media (max-width: 750px) {
+  .container_controler .controler_text h2 {
+      font-size: 34px;
+      line-height: 53.2px;
+  }
+  
+}
